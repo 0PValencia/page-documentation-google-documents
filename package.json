@@ -1,0 +1,19 @@
+{
+  "name": "page-google-documents",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Documentación VitePress del MCP Google Documents",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "docs:build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

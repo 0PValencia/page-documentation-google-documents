@@ -1,0 +1,25 @@
+# Blueprint: Static Site en Render
+# https://render.com/docs/static-sites
+services:
+  - type: web
+    name: google-documents-mcp-docs
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: docs/.vitepress/dist
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_VERSION
+        value: "22.14.0"
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+    routes:
+      # cleanUrls de VitePress: /guia/introduccion → /guia/introduccion.html
+      # (solo si no existe un archivo en esa ruta)
+      - type: rewrite
+        source: /*
+        destination: /*.html
