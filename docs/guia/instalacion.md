@@ -1,5 +1,7 @@
 # Instalación y primer uso
 
+Paquete: [`@0pvalencia/google-documents-mcp`](https://www.npmjs.com/package/@0pvalencia/google-documents-mcp) **≥ 0.6.3** recomendado.
+
 ## 1. Autenticar
 
 ```bash
@@ -10,6 +12,10 @@ Se abre el navegador para el consentimiento OAuth (PKCE). No necesitas crear un 
 
 ::: tip Scope Drive
 Si ya tenías sesión con un scope anterior (`drive.metadata.readonly`), vuelve a ejecutar `login` para conceder `drive` (necesario para duplicar/eliminar).
+:::
+
+::: warning Windows / error 400
+Desde 0.6.3 el CLI abre el navegador solo y **no imprime** la URL OAuth. No copies URLs de la terminal: en Windows los `&` se rompen y Google responde 400. Ver [Beta](/guia/beta#error-400--navegador-en-windows).
 :::
 
 ## 2. Verificar

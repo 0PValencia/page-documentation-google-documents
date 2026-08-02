@@ -2,7 +2,7 @@
 
 **Google Documents MCP** es un servidor [Model Context Protocol](https://modelcontextprotocol.io/) que conecta asistentes de IA con Google Docs.
 
-Paquete npm: [`@0pvalencia/google-documents-mcp`](https://www.npmjs.com/package/@0pvalencia/google-documents-mcp)
+Paquete npm: [`@0pvalencia/google-documents-mcp`](https://www.npmjs.com/package/@0pvalencia/google-documents-mcp) · **v0.6.3**
 
 ## Qué puedes hacer
 

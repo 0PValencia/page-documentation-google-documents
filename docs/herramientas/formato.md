@@ -1,6 +1,6 @@
-# Formato
+# Formato y estructura
 
-Estilos, tablas, imágenes, rangos nombrados, encabezados y saltos.
+Estilos, párrafos, tablas, imágenes, encabezados, notas al pie y rangos con nombre.
 
 | Herramienta | Descripción | Parámetros requeridos |
 | --- | --- | --- |
@@ -60,7 +60,3 @@ Estilos, tablas, imágenes, rangos nombrados, encabezados y saltos.
 | `update_table_cell_style` | updateTableCellStyle: fondo y bordes. | `documentId`, `tableStartIndex`, `startRowIndex`, `endRowIndex`, `startColumnIndex`, `endColumnIndex` |
 | `update_table_column_width` | updateTableColumnProperties width FIXED. | `documentId`, `tableStartIndex`, `columnIndices`, `widthPt` |
 | `update_table_row_min_height` | updateTableRowStyle.minRowHeight. | `documentId`, `tableStartIndex`, `rowIndices`, `minHeightPt` |
-
-## Tip
-
-No inventes URLs de imagen: usa `search_images` → `insertUrl` → `insert_image`.

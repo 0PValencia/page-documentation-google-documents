@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Google Documents MCP
   text: Asistente documental académico
-  tagline: Servidor Model Context Protocol para Google Docs — gestión, edición, formato y flujos APA 7.
+  tagline: Servidor Model Context Protocol para Google Docs — gestión, edición, formato y flujos APA 7. Documentación alineada con @0pvalencia/google-documents-mcp@0.6.3.
   actions:
     - theme: brand
       text: Empezar
@@ -18,7 +18,7 @@ hero:
 
 features:
   - title: Un solo login
-    details: OAuth con PKCE en el navegador. Sin crear proyectos en Google Cloud. Sesión persistente por sistema operativo.
+    details: OAuth con PKCE en el navegador (desde 0.6.3 sin URL en terminal; Windows con rundll32). Sesión persistente por SO.
   - title: 107 herramientas
     details: Drive, edición con índices reales, formato tipográfico, tablas, imágenes, permisos y revisiones.
   - title: Academic Assistant

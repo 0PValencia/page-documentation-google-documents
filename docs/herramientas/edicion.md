@@ -1,6 +1,6 @@
-# Edición
+# Edición de texto
 
-Mutaciones de texto con índices UTF-16 del Docs API.
+Inserción, reemplazo, búsqueda y manipulación de contenido dentro del documento.
 
 | Herramienta | Descripción | Parámetros requeridos |
 | --- | --- | --- |
@@ -14,7 +14,3 @@ Mutaciones de texto con índices UTF-16 del Docs API.
 | `move_content` | Mueve un rango de texto plano a otro índice. No conserva tablas ni imágenes incrustadas. | `documentId`, `startIndex`, `endIndex`, `destinationIndex` |
 | `paste_content` | insertText del texto proporcionado. | `documentId`, `index`, `text` |
 | `replace_text` | Busca y reemplaza todas las coincidencias de un texto en el documento. | `documentId`, `findText`, `replaceText` |
-
-## Tip
-
-Usa `get_document_structure` (categoría Formato) antes de editar rangos para obtener índices reales.

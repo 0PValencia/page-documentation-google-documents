@@ -1,6 +1,6 @@
 # Documentos y Drive
 
-Crear, listar, mover, exportar, permisos, revisiones y comentarios en Drive.
+Operaciones sobre documentos de Google: listado, creación, metadatos, permisos, revisiones, comentarios de Drive, papelera y exportación.
 
 | Herramienta | Descripción | Parámetros requeridos |
 | --- | --- | --- |

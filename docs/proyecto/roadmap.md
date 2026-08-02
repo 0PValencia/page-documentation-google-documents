@@ -1,14 +1,15 @@
 # Roadmap
 
-Estado actual: **beta cerrada** (OAuth Testing + test users).
+Estado actual: **beta cerrada** (OAuth Testing + test users) · paquete **0.6.3**
 
 ## Hecho
 
 - Login OAuth PKCE sin proyecto Cloud del usuario
-- Catálogo amplio de tools Docs + Drive
+- Catálogo amplio de tools Docs + Drive (107)
 - Flujos académicos APA 7 + repair
 - Clientes stdio documentados (Cursor, VS Code, Claude, OpenCode)
 - CLI `doctor` / `login` / `logout`
+- **0.6.3** — login en Windows sin URL en terminal (`rundll32`, sin await del opener)
 
 ## Próximo
 

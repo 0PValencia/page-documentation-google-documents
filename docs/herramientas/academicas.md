@@ -1,6 +1,6 @@
-# Académicas
+# Herramientas académicas
 
-Portada, APA 7, citas, índice y reparación de monografías.
+Estructura académica, citas, bibliografía, tabla de contenidos y generación de documentos.
 
 | Herramienta | Descripción | Parámetros requeridos |
 | --- | --- | --- |
