@@ -5,6 +5,8 @@ export default defineConfig({
   title: 'Google Documents MCP',
   description:
     'Documentación del servidor MCP para Google Docs — asistente documental académico.',
+  // base absoluto en raíz del dominio (onrender.com). No uses subpath sin ajustar esto.
+  base: '/',
   cleanUrls: true,
   lastUpdated: true,
 

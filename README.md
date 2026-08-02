@@ -27,9 +27,21 @@ Configurado como **Static Site** vía [`render.yaml`](./render.yaml).
 | Campo | Valor |
 | --- | --- |
 | Runtime | Static |
-| Build Command | `npm ci && npm run build` |
+| Build Command | `npm ci --include=dev && npm run build` |
 | Publish Directory | `docs/.vitepress/dist` |
 | Node | `22.14.0` (`NODE_VERSION`) |
+
+### Si el CSS no carga
+
+Causa típica en Render: un rewrite SPA `/* → /index.html`. El navegador pide `/assets/style….css` y recibe HTML → en consola verás *MIME type text/html*.
+
+Este repo **no** usa ese rewrite. Solo reescribe rutas de docs (`/guia/*`, etc.), nunca `/assets/*`.
+
+Comprueba en el deploy:
+
+1. Publish Directory = `docs/.vitepress/dist` (no la raíz del repo)
+2. En Network, `/assets/style.*.css` → **200** y `content-type: text/css`
+3. En Redirects/Rewrites del dashboard, borra cualquier `/* → /index.html` manual
 
 ### Opción A — Blueprint (recomendado)
 
@@ -42,7 +54,7 @@ Configurado como **Static Site** vía [`render.yaml`](./render.yaml).
 
 1. **New** → **Static Site** → conecta el repo.
 2. Si el sitio vive en un monorepo, pon **Root Directory** = `page-google-documents`.
-3. Build Command: `npm ci && npm run build`
+3. Build Command: `npm ci --include=dev && npm run build`
 4. Publish Directory: `docs/.vitepress/dist`
 5. Environment → `NODE_VERSION` = `22.14.0`
 

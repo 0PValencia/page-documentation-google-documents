@@ -1,16 +1,22 @@
 # Blueprint: Static Site en Render
 # https://render.com/docs/static-sites
+#
+# IMPORTANTE: nunca uses rewrite catch-all /* → /index.html
+# Eso hace que /assets/*.css devuelva HTML y el CSS "no carga".
 services:
   - type: web
     name: google-documents-mcp-docs
     runtime: static
-    buildCommand: npm ci && npm run build
+    buildCommand: npm ci --include=dev && npm run build
     staticPublishPath: docs/.vitepress/dist
     autoDeployTrigger: commit
     envVars:
       - key: NODE_VERSION
         value: "22.14.0"
     headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
       - path: /*
         name: X-Content-Type-Options
         value: nosniff
@@ -18,8 +24,16 @@ services:
         name: Referrer-Policy
         value: strict-origin-when-cross-origin
     routes:
-      # cleanUrls de VitePress: /guia/introduccion → /guia/introduccion.html
-      # (solo si no existe un archivo en esa ruta)
+      # Solo páginas de docs (cleanUrls). NUNCA tocar /assets/* ni /*.css
       - type: rewrite
-        source: /*
-        destination: /*.html
+        source: /guia/*
+        destination: /guia/*.html
+      - type: rewrite
+        source: /herramientas/*
+        destination: /herramientas/*.html
+      - type: rewrite
+        source: /clientes/*
+        destination: /clientes/*.html
+      - type: rewrite
+        source: /proyecto/*
+        destination: /proyecto/*.html
