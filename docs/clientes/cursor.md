@@ -45,6 +45,12 @@ Deberías ver las herramientas:
 - `create_document`
 - `append_text`
 
+## 5. Suite complementaria + skills (opcional)
+
+Para linter, diagramas, imágenes, capturas, DB, gráficos y citas, añade los MCP de la [suite](/complementos/) con `npx -y @0pvalencia/…-mcp`.
+
+Para calidad editorial, instala las skills [google-documents](/skills/google-documents) e [informe-angelica](/skills/informe-angelica) en tu carpeta de skills de Cursor.
+
 ## Desarrollo local (sin npm)
 
 Si aún no usas el paquete publicado:

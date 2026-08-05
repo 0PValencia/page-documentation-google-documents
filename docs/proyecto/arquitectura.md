@@ -10,17 +10,18 @@ Cliente MCP (Cursor, VS Code, …)
         ▼
    server / transports
         │
-        ▼
-     tools/docs/*     ← validación de parámetros
-        │
-        ▼
+        ├── tools/docs/*      ← acciones (validan y delegan)
+        ├── prompts/*         ← plantillas para el agente
+        └── resources/*       ← guías google-documents://…
+                │
+                ▼
    services/docs/*    ← Docs API + Drive API
-        │
-        ▼
+                │
+                ▼
    auth / sesión OAuth
 ```
 
-Las tools solo validan parámetros y delegan en `services/`.
+Las tools solo validan parámetros y delegan en `services/`. Los prompts/resources orientan la orquestación (informes largos, repair, edición segura).
 
 ## Árbol relevante
 

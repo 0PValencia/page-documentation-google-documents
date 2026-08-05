@@ -4,14 +4,17 @@ layout: home
 hero:
   name: Google Documents MCP
   text: Asistente documental académico
-  tagline: Servidor Model Context Protocol para Google Docs — gestión, edición, formato y flujos APA 7. Documentación alineada con @0pvalencia/google-documents-mcp@0.6.3.
+  tagline: Docs + suite de MCP complementarios + skills de agente. Alineado con @0pvalencia/google-documents-mcp y la familia @0pvalencia/*-mcp.
   actions:
     - theme: brand
       text: Empezar
       link: /guia/introduccion
     - theme: alt
-      text: Ver herramientas
-      link: /herramientas/
+      text: Complementos
+      link: /complementos/
+    - theme: alt
+      text: Skills
+      link: /skills/
     - theme: alt
       text: npm
       link: https://www.npmjs.com/package/@0pvalencia/google-documents-mcp
@@ -19,10 +22,10 @@ hero:
 features:
   - title: Un solo login
     details: OAuth con PKCE en el navegador (desde 0.6.3 sin URL en terminal; Windows con rundll32). Sesión persistente por SO.
-  - title: 107 herramientas
+  - title: ~106 tools de Docs
     details: Drive, edición con índices reales, formato tipográfico, tablas, imágenes, permisos y revisiones.
-  - title: Academic Assistant
-    details: Portada, APA 7, citas, bibliografía, índice y repair_academic_document para docs generados por LLM.
-  - title: Clientes stdio
-    details: Compatible con Cursor, VS Code (Copilot Agent), Claude Desktop, Claude Code y OpenCode.
+  - title: Suite complementaria
+    details: Linter, diagramas, imágenes, capturas, Postgres, gráficos y citas Crossref vía npx @0pvalencia/*-mcp.
+  - title: Skills de agente
+    details: google-documents + informe-angelica orientan orquestación, densidad visual y calidad editorial.
 ---

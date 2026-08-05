@@ -40,6 +40,8 @@ export default defineConfig({
     nav: [
       { text: 'Guía', link: '/guia/introduccion' },
       { text: 'Herramientas', link: '/herramientas/' },
+      { text: 'Complementos', link: '/complementos/' },
+      { text: 'Skills', link: '/skills/' },
       { text: 'Clientes', link: '/clientes/' },
       { text: 'Proyecto', link: '/proyecto/arquitectura' },
       {
@@ -64,12 +66,34 @@ export default defineConfig({
           { text: 'CLI', link: '/guia/cli' },
           { text: 'Sesión', link: '/guia/sesion' },
           { text: 'Beta cerrada', link: '/guia/beta' },
+          { text: 'Prompts y resources', link: '/guia/prompts-resources' },
         ],
       },
       {
         text: 'Academic Assistant',
         items: [
           { text: 'Flujos académicos', link: '/guia/academic-assistant' },
+        ],
+      },
+      {
+        text: 'MCP complementarios',
+        items: [
+          { text: 'Resumen', link: '/complementos/' },
+          { text: 'academic-linter', link: '/complementos/academic-linter' },
+          { text: 'diagram-studio', link: '/complementos/diagram-studio' },
+          { text: 'image-lab', link: '/complementos/image-lab' },
+          { text: 'app-screenshot', link: '/complementos/app-screenshot' },
+          { text: 'db-introspector', link: '/complementos/db-introspector' },
+          { text: 'chart-from-data', link: '/complementos/chart-from-data' },
+          { text: 'citation-lab', link: '/complementos/citation-lab' },
+        ],
+      },
+      {
+        text: 'Skills de agente',
+        items: [
+          { text: 'Resumen', link: '/skills/' },
+          { text: 'google-documents', link: '/skills/google-documents' },
+          { text: 'informe-angelica', link: '/skills/informe-angelica' },
         ],
       },
       {

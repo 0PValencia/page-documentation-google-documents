@@ -41,4 +41,8 @@ Antes de formatear rangos concretos:
 get_document_structure → startIndex/endIndex → apply_format / apply_heading
 ```
 
+Para informes largos usa los **prompts MCP** (`long_academic_report`, `fill_report_to_length`, `expand_section`) y el resource `google-documents://guides/long-report-playbook`. Ver [Prompts y resources](/guia/prompts-resources).
+
+Para densidad visual (UML, capturas, ER, citas) combina con [MCP complementarios](/complementos/) y las skills [google-documents](/skills/google-documents) + [informe-angelica](/skills/informe-angelica).
+
 Ver detalle en [Herramientas académicas](/herramientas/academicas).

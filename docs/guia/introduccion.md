@@ -34,3 +34,5 @@ login (una vez) → doctor → conectar cliente → usar tools
 ## Siguiente paso
 
 Sigue la [instalación y primer uso](./instalacion).
+
+Para informes largos de calidad: [Prompts y resources](./prompts-resources), [MCP complementarios](/complementos/) y [Skills](/skills/).
