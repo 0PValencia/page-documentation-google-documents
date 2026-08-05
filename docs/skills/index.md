@@ -16,10 +16,12 @@ Las skills no reemplazan a los servidores MCP: los **dirigen**.
 ## Cómo se combinan
 
 ```text
-informe-angelica  →  qué escribir y cómo debe verse
-google-documents  →  cómo llamar tools (documentId, índices, TOC)
-MCP complementarios →  linter, diagramas, capturas, citas, DB
-google-documents-mcp →  materializar en el Doc
+informe-angelica     →  qué escribir, cuotas SI I, intake, pipelines suite
+google-documents     →  documentId, índices, TOC, tablas, Mermaid simple
+MCP complementarios  →  diagram-studio, image-lab, app-screenshot,
+                         db-introspector, chart-from-data, citation-lab,
+                         academic-linter  (@0pvalencia/*-mcp ≥0.1.1)
+google-documents-mcp →  materializar artefactos en el Doc
 ```
 
 ## Instalación en Cursor
