@@ -12,7 +12,8 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
-    ['meta', { name: 'theme-color', content: '#3451b2' }],
+    ['meta', { name: 'theme-color', content: '#0f766e' }],
+    ['meta', { name: 'color-scheme', content: 'light dark' }],
   ],
 
   themeConfig: {
@@ -94,6 +95,8 @@ export default defineConfig({
           { text: 'Resumen', link: '/skills/' },
           { text: 'google-documents', link: '/skills/google-documents' },
           { text: 'informe-angelica', link: '/skills/informe-angelica' },
+          { text: 'vitepress', link: '/skills/vitepress' },
+          { text: 'web-design-guidelines', link: '/skills/web-design-guidelines' },
         ],
       },
       {

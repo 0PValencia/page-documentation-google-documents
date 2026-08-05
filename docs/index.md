@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Google Documents MCP
   text: Asistente documental académico
-  tagline: Docs + suite de MCP complementarios + skills de agente. Alineado con @0pvalencia/google-documents-mcp y la familia @0pvalencia/*-mcp.
+  tagline: Documentación clara para Docs, MCP complementarios y skills de agente — alineada con @0pvalencia/google-documents-mcp.
   actions:
     - theme: brand
       text: Empezar
@@ -25,7 +25,7 @@ features:
   - title: ~106 tools de Docs
     details: Drive, edición con índices reales, formato tipográfico, tablas, imágenes, permisos y revisiones.
   - title: Suite complementaria
-    details: Linter, diagramas, imágenes, capturas, Postgres, gráficos y citas Crossref vía npx @0pvalencia/*-mcp.
+    details: Linter, diagramas, imágenes, capturas, Postgres, gráficos y citas Crossref vía npx @0pvalencia/*-mcp @0.1.1+.
   - title: Skills de agente
-    details: google-documents + informe-angelica orientan orquestación, densidad visual y calidad editorial.
+    details: Docs, informe Angélica, VitePress y Web Interface Guidelines para orquestación y UX.
 ---

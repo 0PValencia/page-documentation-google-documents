@@ -10,6 +10,8 @@ Las skills no reemplazan a los servidores MCP: los **dirigen**.
 | --- | --- | --- |
 | `google-documents` | Crear/editar Docs vía MCP (índices, headings, TOC, imágenes) | [google-documents](./google-documents) |
 | `informe-angelica` | Informes SI I / INF 342 (UAGRM, estilo Angélica) | [informe-angelica](./informe-angelica) |
+| `vitepress` | Configurar y personalizar esta documentación (tema, Markdown) | [vitepress](./vitepress) |
+| `web-design-guidelines` | Revisar UX/a11y de la UI (focus, motion, tipografía) | [web-design-guidelines](./web-design-guidelines) |
 
 ## Cómo se combinan
 
@@ -26,8 +28,9 @@ Copia las carpetas de skill a tu directorio de skills del agente (p. ej. `~/.cur
 
 - `google-documents/` (`SKILL.md` + `references/`)
 - `informe-angelica/` (`SKILL.md` + `references/`)
+- `vitepress/` y `web-design-guidelines/` (UX de esta docs; vía `npx skills`)
 
-El agente las activa por `description` cuando el pedido coincide (Google Docs, informe Angélica, SI I, etc.).
+El agente las activa por `description` cuando el pedido coincide (Google Docs, informe Angélica, SI I, VitePress, revisión UI, etc.).
 
 ## Relación con prompts MCP
 
